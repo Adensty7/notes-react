@@ -1,0 +1,61 @@
+.border-white {
+    border: 2px solid white;
+  }
+  
+  
+  .text-blue {
+    color: paleturquoise;
+  }
+  
+  .btn-blue {
+    background-color: paleturquoise;
+  }
+  
+  input.list-check {
+    width: 25px;
+    height: 25px;
+  }
+
+
+  
+
+  .hover-link{
+    opacity: 0.5;
+  }
+
+  .hover-link:hover{
+    opacity: 1;
+  }
+
+  .errors {
+    color: crimson;
+  }
+
+  @media (max-width: 768px) { 
+    .note-card {
+      height: 40vh;
+    }
+   }
+   @media (min-width: 768px) { 
+    .note-card {
+      height: 35vh;
+    }
+   }
+
+
+  #btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
+    border-radius: 50%;
+  }
+
+  .btn-orange {
+    background-color: orange;
+  }
+
+  .btn-orange:hover {
+    background-color: orange;
+  }
+  
