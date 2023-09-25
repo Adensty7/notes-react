@@ -29,7 +29,7 @@ const NotesPage = () => {
 
     useEffect(() => {
       document.title = "My Notes"
-      axios.get("/notes/user/" + UserID)
+      axios.get("https://adensty-todoapp-react-db-api.onrender.com/notes/user/" + UserID)
       .then((res) => {
         //console.log(res.data);
         setNotes(res.data);
