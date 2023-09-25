@@ -29,7 +29,7 @@ const NotesPage = () => {
 
     useEffect(() => {
       document.title = "My Notes"
-      axios.get("https://adensty-todoapp-react-db-api.herokuapp.com/notes/user/" + UserID)
+      axios.get("/notes/user/" + UserID)
       .then((res) => {
         //console.log(res.data);
         setNotes(res.data);
@@ -44,7 +44,7 @@ const NotesPage = () => {
     };   
     const date = new Date().toLocaleString("en-us", options)
     // console.log(date); 
-    axios.post("https://adensty-todoapp-react-db-api.herokuapp.com/notes", {
+    axios.post("https://adensty-todoapp-react-db-api.onrender.com/notes", {
         "userId": userID,
         "title": title,
         "note": note,
@@ -58,7 +58,7 @@ const NotesPage = () => {
 
   const deleteNote = (e, id) => {
     e.preventDefault();
-      axios.delete("https://adensty-todoapp-react-db-api.herokuapp.com/notes/" + id)
+      axios.delete("https://adensty-todoapp-react-db-api.onrender.com/notes/" + id)
       .then((res) => {
         console.log(res);
       })
@@ -71,7 +71,7 @@ const NotesPage = () => {
     };   
     const date = new Date().toLocaleString("en-us", options)
     // console.log(date); 
-      axios.put("https://adensty-todoapp-react-db-api.herokuapp.com/notes/" + id, {
+      axios.put("https://adensty-todoapp-react-db-api.onrender.com/notes/" + id, {
         "title": title,
         "note": note,
         "updationTime": date
