@@ -171,7 +171,7 @@ const Notes = (props) => {
                 </div>
         </div>
         </div>  }
-        { notes.map(n =>
+        { notes.map((n) =>
         
          { 
             console.log(n.note.length);
